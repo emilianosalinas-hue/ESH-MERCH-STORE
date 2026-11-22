@@ -110,7 +110,9 @@ Durante el desarrollo se exploró la configuración de GitHub MCP en Antigravity
 
 La configuración se mantuvo en archivos locales excluidos del repositorio mediante `.gitignore`, con el objetivo de evitar publicar credenciales.
 
-**Evidencia pendiente:** incorporar capturas de la configuración y de las pruebas de conexión MCP. No se considera confirmada una conexión funcional mientras el administrador de MCP no termine de cargar y permita verificarla.
+**Estado final de la integración MCP:**
+
+Se exploró la configuración de GitHub MCP en Antigravity para facilitar la interacción con el repositorio. Sin embargo, el administrador de MCP permaneció en estado de carga («Loading MCP servers...») y no fue posible confirmar una conexión funcional. Por este motivo, MCP no se considera una funcionalidad completada del proyecto.
 
 ## 8. Instalación y ejecución local
 
