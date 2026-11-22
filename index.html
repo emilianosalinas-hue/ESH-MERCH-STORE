@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/spotify.css">
+  <link rel="stylesheet" href="css/ai.css">
 </head>
 
 <body class="theme-dark">
@@ -178,6 +179,48 @@
         <div id="sp-radio-body"></div>
       </div>
     </section>
+
+    <section id="esh-ai" class="radio-section theme-dark" aria-label="ESH AI - Asistente de inteligencia artificial">
+      <div class="container">
+        <header class="section-header">
+          <div>
+            <span class="label-mono" style="color: var(--color-crimson);">INTELIGENCIA ARTIFICIAL</span>
+            <h2 class="section-title">ESH AI</h2>
+            <p class="section-subtitle">Un asistente inteligente para explorar el universo de ESH.</p>
+          </div>
+          <div>
+            <span class="label-mono" style="color: var(--text-dark-muted);">POWERED BY GROQ</span>
+          </div>
+        </header>
+
+        <div class="esh-ai-panel">
+          <div class="esh-ai-key-area">
+            <label for="esh-ai-api-key">GROQ API KEY</label>
+            <input id="esh-ai-api-key" type="password" autocomplete="off" placeholder="Introduce tu API Key">
+            <button id="esh-ai-activate" class="btn btn-crimson" type="button">
+              ACTIVAR ASISTENTE
+            </button>
+            <p id="esh-ai-key-status" role="status">
+              Tu clave se utilizará temporalmente mientras la página esté abierta.
+            </p>
+          </div>
+
+          <div class="esh-ai-chat">
+            <label for="esh-ai-question">¿QUÉ QUIERES SABER SOBRE ESH?</label>
+            <textarea id="esh-ai-question" rows="3" maxlength="1000" placeholder="Escribe tu pregunta..."
+              disabled></textarea>
+            <button id="esh-ai-send" class="btn btn-crimson" type="button" disabled>
+              ENVIAR PREGUNTA
+            </button>
+            <p id="esh-ai-loading" role="status" aria-live="polite" hidden>
+              ESH AI está pensando...
+            </p>
+            <div id="esh-ai-response" role="region" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- 7. Drawer del Carrito Lateral (Off-canvas) -->
@@ -261,6 +304,7 @@
   <script src="js/spotify-api.js"></script>
   <script src="js/spotify-ui.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/ai.js"></script>
 </body>
 
 </html>

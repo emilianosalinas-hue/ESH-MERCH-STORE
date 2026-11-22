@@ -1,0 +1,94 @@
+/* =========================================
+   ESH AI — Gemini Assistant
+========================================= */
+
+.esh-ai-panel {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 32px;
+    padding: 32px;
+    border: 1px solid var(--border-dark);
+    background: var(--color-dark, #121212);
+}
+
+.esh-ai-key-area,
+.esh-ai-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.esh-ai-key-area label,
+.esh-ai-chat label {
+    color: var(--text-dark-primary);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+#esh-ai-api-key,
+#esh-ai-question {
+    width: 100%;
+    padding: 14px;
+    color: #fff;
+    background: #080808;
+    border: 1px solid #333;
+    border-radius: 0;
+    font: inherit;
+    outline: none;
+}
+
+#esh-ai-api-key:focus,
+#esh-ai-question:focus {
+    border-color: var(--color-crimson);
+}
+
+#esh-ai-question {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.esh-ai-panel button {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.esh-ai-panel button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+#esh-ai-key-status,
+#esh-ai-loading {
+    color: var(--text-dark-muted);
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+#esh-ai-response {
+    min-height: 80px;
+    padding: 18px;
+    color: var(--text-dark-primary);
+    background: #080808;
+    border-left: 2px solid var(--color-crimson);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+#esh-ai-loading {
+    color: var(--color-crimson);
+}
+
+@media (max-width: 768px) {
+    .esh-ai-panel {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 28px;
+    }
+
+    .esh-ai-panel button {
+        width: 100%;
+    }
+}
