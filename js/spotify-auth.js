@@ -17,7 +17,9 @@ const SpotifyAuth = (() => {
   // Configuración de Spotify para ESH
   const defaultConfig = {
     clientId: '2e0e44c9822b437c9c5cab6057e69abc', // Marcador provisional: configurar con el Client ID de Spotify Dashboard
-    redirectUri: 'http://127.0.0.1:5500/ESH-MERCH-STORE/index.html',
+    redirectUri: window.location.hostname === '127.0.0.1'
+      ? 'http://127.0.0.1:5500/ESH-MERCH-STORE/index.html'
+      : 'https://emilianosalinas-hue.github.io/ESH-MERCH-STORE/',
     artistId: '0ZY9CCYal3geaJxMQDJ13t',
     scope: '',
     tokenEndpoint: 'https://accounts.spotify.com/api/token',
