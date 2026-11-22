@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESH OFFICIAL MERCH STORE // TIENDA OFICIAL</title>
+  <meta name="description"
+    content="Tienda oficial de merchandising de ESH. Streetwear independiente, playeras oversize, arte editorial y estética de dualidad.">
+
+  <!-- Google Fonts: Syne & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/spotify.css">
+</head>
+
+<body class="theme-dark">
+
+  <!-- 1. Barra de Anuncios / Ticker de Símbolos -->
+  <aside class="ticker-bar" aria-label="Anuncios oficiales">
+    <div class="ticker-content">
+      <span class="ticker-item">ESH OFFICIAL MERCH STORE <span class="scar">✦</span> DROP 01 DISPONIBLE</span>
+      <span class="ticker-item"><span class="scar">🩸</span> COLECCIÓN DUALIDAD: ÁNGEL CAÍDO</span>
+      <span class="ticker-item">ENVÍOS NACIONALES <span class="scar">✦</span> EDICIÓN LIMITADA</span>
+      <span class="ticker-item">ESH OFFICIAL MERCH STORE <span class="scar">✦</span> DROP 01 DISPONIBLE</span>
+      <span class="ticker-item"><span class="scar">🩸</span> COLECCIÓN DUALIDAD: ÁNGEL CAÍDO</span>
+      <span class="ticker-item">ENVÍOS NACIONALES <span class="scar">✦</span> EDICIÓN LIMITADA</span>
+    </div>
+  </aside>
+
+  <!-- 2. Header de Navegación -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="#hero" class="brand-link" aria-label="ESH Official Store">
+          <img src="logo/esh logo white.png" alt="ESH Logo Oficial" class="brand-logo-img">
+          <span class="brand-title">ESH<span class="brand-dot">.</span>STORE</span>
+        </a>
+      </div>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#catalogo" class="nav-link">Catálogo</a>
+        <a href="#manifiesto" class="nav-link">Identidad</a>
+        <a href="#accesorios" class="nav-link">Accesorios</a>
+        <a href="#esh-radio" class="nav-link">Radio</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="cart-toggle" class="cart-toggle-btn" aria-label="Abrir carrito de compras">
+          <img src="assets/icons/icon-bag.svg" alt="Bolsa de compra" width="22" height="22">
+          <span id="cart-badge" class="cart-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Hero Section (Oscuro - El Abismo & Protagonismo del Querubín) -->
+    <section id="hero" class="hero-section theme-dark">
+      <div class="hero-watermark" aria-hidden="true">
+        <img src="logo/esh logo white.png" alt="" class="hero-watermark-img">
+      </div>
+      <div class="container hero-content">
+        <div class="hero-tag label-mono">
+          <img src="assets/icons/icon-star.svg" alt="" width="14" height="14">
+          <span>DROP 01 // DUALIDAD & CAÍDA</span>
+        </div>
+        <h1 class="hero-title">ENTRE LA INOCENCIA Y LA PENUMBRA</h1>
+        <p class="hero-subtitle">
+          Merchandising oficial del proyecto musical ESH. Siluetas streetwear pesadas, serigrafía de alta densidad y el
+          choque visual del querubín enmascarado.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalogo" class="btn btn-solid-light">EXPLORAR CATÁLOGO ↓</a>
+          <a href="#manifiesto" class="btn btn-outline">CONOCER LA IDENTIDAD</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Catálogo de Playeras (Claro - Inocencia & Contraste) -->
+    <section id="catalogo" class="catalog-section theme-light">
+      <div class="container">
+        <header class="section-header">
+          <div>
+            <span class="label-mono" style="color: var(--color-crimson);">COLECCIÓN PRINCIPAL</span>
+            <h2 class="section-title">PLAYERAS OVERSIZE</h2>
+            <p class="section-subtitle">Prendas oficiales en algodón pesado con corte boxy contemporáneo.</p>
+          </div>
+          <div>
+            <span class="label-mono" style="color: var(--section-muted);">DISPONIBILIDAD INMEDIATA</span>
+          </div>
+        </header>
+
+        <!-- Cuadrícula dinámica de productos -->
+        <div id="product-grid" class="product-grid">
+          <!-- Renderizado dinámico vía js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Manifiesto & Simbología (Oscuro - La Máscara & Los Símbolos) -->
+    <section id="manifiesto" class="manifesto-section theme-dark">
+      <div class="container">
+        <div class="manifesto-symbols">
+          <img src="assets/icons/icon-dove.svg" alt="Paloma blanca (Inocencia)" width="28" height="28">
+          <span style="font-size: 1.2rem; color: var(--border-dark);">/</span>
+          <img src="assets/icons/icon-star.svg" alt="Estrella / Cicatriz" width="22" height="22">
+          <span style="font-size: 1.2rem; color: var(--border-dark);">/</span>
+          <img src="assets/icons/icon-bat.svg" alt="Murciélago (Oscuridad)" width="28" height="28">
+        </div>
+        <span class="label-mono" style="color: var(--color-crimson); margin-bottom: 16px; display: block;">EL MANIFIESTO
+          DE ESH</span>
+        <blockquote class="manifesto-quote">
+          "NO SOMOS ÁNGELES DE LUZ PURA NI CRIATURAS DE SOMBRA CIEGA. PORTAMOS LA MÁSCARA PARA HABITAR AMBOS MUNDOS."
+        </blockquote>
+
+        <!-- Protagonista Editorial: Personaje Ángel Caído -->
+        <div class="manifesto-character-card">
+          <div class="manifesto-img-wrapper">
+            <img src="assets/img/products/NUEVOS/PERSONAJE/angel-caido.png"
+              alt="Personaje Oficial ESH - Ángel Caído con Máscara" class="manifesto-character-img" loading="lazy">
+            <div class="manifesto-vignette"></div>
+            <div class="manifesto-caption-badge label-mono">
+              <span class="badge-dot"></span> FIGURA 01 // EL ÁNGEL CAÍDO ENMASCARADO
+            </div>
+          </div>
+        </div>
+
+        <p style="color: var(--text-dark-muted); max-width: 600px; margin: 0 auto; font-size: 0.95rem;">
+          Cada pieza está confeccionada como una extensión tangible de la música de ESH. Telas de alto gramaje pensadas
+          para durar y resistir.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Accesorios & Gorras (Claro - Exposición de Prototipos) -->
+    <section id="accesorios" class="catalog-section theme-light">
+      <div class="container">
+        <header class="section-header">
+          <div>
+            <span class="label-mono" style="color: var(--color-crimson);">LÍNEA EN DESARROLLO</span>
+            <h2 class="section-title">GORRAS & ACCESORIOS</h2>
+            <p class="section-subtitle">Prototipos en fase de producción textil y orfebrería.</p>
+          </div>
+          <div>
+            <span class="label-mono" style="color: var(--color-crimson);">[PROTOTIPOS]</span>
+          </div>
+        </header>
+
+        <div id="accessories-grid" class="product-grid">
+          <!-- Renderizado dinámico vía js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ESH RADIO (Dark – Spotify Integration) -->
+    <section id="esh-radio" class="radio-section theme-dark" aria-label="ESH Radio – Música Oficial">
+      <div class="container">
+        <header class="section-header">
+          <div>
+            <span class="label-mono" style="color: var(--color-crimson);">MÚSICA OFICIAL</span>
+            <h2 class="section-title">ESH RADIO</h2>
+            <p class="section-subtitle">Discografía oficial, lanzamientos y buscador directo desde Spotify.</p>
+          </div>
+          <div>
+            <span class="label-mono" style="color: var(--text-dark-muted);">POWERED BY SPOTIFY</span>
+          </div>
+        </header>
+
+        <!-- Renderizado dinámico por js/spotify-ui.js -->
+        <div id="sp-radio-body"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Drawer del Carrito Lateral (Off-canvas) -->
+  <div id="cart-overlay" class="cart-overlay" aria-hidden="true"></div>
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Carrito de compras" role="dialog">
+    <div class="cart-header">
+      <h3 style="font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;">
+        TU PEDIDO <span style="color: var(--color-crimson);">//</span> ESH
+      </h3>
+      <button id="cart-close" aria-label="Cerrar carrito" style="padding: 4px;">
+        <img src="assets/icons/icon-close.svg" alt="Cerrar" width="20" height="20">
+      </button>
+    </div>
+
+    <div id="cart-items" class="cart-items-container">
+      <!-- Elementos inyectados por js/app.js -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>SUBTOTAL ESTIMADO:</span>
+        <span id="cart-total" style="color: var(--color-crimson);">$0 MXN</span>
+      </div>
+      <p style="font-size: 0.72rem; color: var(--text-dark-muted); margin-bottom: 14px;">
+        * Los precios y existencias se confirman directamente al formalizar el pedido con el equipo de ESH.
+      </p>
+      <button id="checkout-whatsapp" class="btn btn-crimson" style="width: 100%;" aria-label="Pedir por WhatsApp">
+        <img src="assets/icons/icon-whatsapp.svg" alt="WhatsApp" width="18" height="18">
+        PEDIR POR WHATSAPP
+      </button>
+    </div>
+  </aside>
+
+  <!-- 8. Footer Oficial -->
+  <footer class="site-footer">
+    <div class="container" style="display: flex; flex-direction: column; gap: var(--space-2xl);">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-xl);">
+        <div>
+          <div class="footer-signature">
+            <img src="logo/esh logo white.png" alt="ESH Logo" class="footer-logo-img">
+            <span class="brand-title" style="font-size: 1.5rem;">ESH<span class="brand-dot">.</span>STORE</span>
+          </div>
+          <p style="font-size: 0.85rem; max-width: 320px; margin-top: 8px;">
+            Tienda oficial de merchandising del proyecto musical ESH. Dualidad, música independiente y streetwear.
+          </p>
+        </div>
+
+        <div>
+          <span class="label-mono"
+            style="color: var(--text-dark-primary); margin-bottom: 12px; display: block;">NAVEGACIÓN</span>
+          <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+            <li><a href="#catalogo" style="color: var(--text-dark-muted);">Playeras Oversize</a></li>
+            <li><a href="#accesorios" style="color: var(--text-dark-muted);">Gorras & Accesorios</a></li>
+            <li><a href="#manifiesto" style="color: var(--text-dark-muted);">Identidad ESH</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="label-mono" style="color: var(--text-dark-primary); margin-bottom: 12px; display: block;">PEDIDOS
+            & AYUDA</span>
+          <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+            <li>Envíos a toda la República</li>
+            <li>Atención directa por WhatsApp</li>
+            <li>Tiempos de entrega: 3 a 7 días hábiles</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        style="border-top: 1px solid var(--border-dark); padding-top: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); font-size: 0.75rem;">
+        <span>&copy; 2026 ESH OFFICIAL MERCH STORE. TODOS LOS DERECHOS RESERVADOS.</span>
+        <span>COMPATIBLE CON GITHUB PAGES // SIN DEPENDENCIAS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/spotify-auth.js"></script>
+  <script src="js/spotify-api.js"></script>
+  <script src="js/spotify-ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+
+# Configuraciones locales de Antigravity y Gemini
+.agent/
+.agents/
+.gemini/
+.impeccable/
+
+# Credenciales y variables de entorno
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencias y archivos temporales
+node_modules/
+*.log

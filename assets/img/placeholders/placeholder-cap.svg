@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <rect width="600" height="600" fill="#141414"/>
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#222222" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="300" y1="0" x2="300" y2="600" stroke="#222222" stroke-width="1" stroke-dasharray="4 4"/>
+  <!-- Cap silhouette -->
+  <g stroke="#f5f5f5" stroke-width="2" fill="none" opacity="0.4" transform="translate(150, 160)">
+    <path d="M50 170 C50 80, 140 60, 220 80 C270 92, 290 120, 290 170 Z"/>
+    <path d="M220 170 C240 170, 310 180, 340 210 C320 220, 260 215, 200 200 C150 188, 100 180, 50 170 Z"/>
+    <circle cx="170" cy="70" r="4" fill="#f5f5f5"/>
+    <line x1="170" y1="74" x2="170" y2="170" stroke="#f5f5f5" stroke-width="1.5" stroke-dasharray="2 2"/>
+  </g>
+  <!-- Framing marks -->
+  <path d="M 40 60 L 40 40 L 60 40" stroke="#d6001c" stroke-width="2" fill="none"/>
+  <path d="M 540 40 L 560 40 L 560 60" stroke="#d6001c" stroke-width="2" fill="none"/>
+  <path d="M 40 540 L 40 560 L 60 560" stroke="#d6001c" stroke-width="2" fill="none"/>
+  <path d="M 540 560 L 560 560 L 560 540" stroke="#d6001c" stroke-width="2" fill="none"/>
+  <!-- Badge & Typography -->
+  <rect x="210" y="460" width="180" height="26" fill="#d6001c" rx="1"/>
+  <text x="300" y="477" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" letter-spacing="2" text-anchor="middle">EN PRODUCCIÓN</text>
+  <text x="300" y="520" fill="#8e8e93" font-family="'Space Grotesk', sans-serif" font-size="13" letter-spacing="3" text-anchor="middle">GORRA ESH DUALITY [PROTOTIPO]</text>
+</svg>
