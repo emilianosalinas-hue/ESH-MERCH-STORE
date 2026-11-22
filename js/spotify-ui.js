@@ -134,9 +134,9 @@ const SpotifyUI = (() => {
         >
           <div class="sp-album-cover-wrap">
             ${cover
-              ? `<img src="${cover}" alt="${album.name}" class="sp-album-cover" loading="lazy">`
-              : `<div class="sp-album-cover-placeholder">◆</div>`
-            }
+          ? `<img src="${cover}" alt="${album.name}" class="sp-album-cover" loading="lazy">`
+          : `<div class="sp-album-cover-placeholder">◆</div>`
+        }
             <span class="sp-album-type-badge">${type}</span>
           </div>
           <div class="sp-album-meta">
@@ -406,7 +406,9 @@ const SpotifyUI = (() => {
 
     // Listen to auth events
     window.addEventListener('esh:spotify-auth-success', async () => {
-      await loadRadio();
+      if (SpotifyAuth.isAuthenticated()) {
+        await loadRadio();
+      }
     });
 
     window.addEventListener('esh:spotify-logout', () => {
